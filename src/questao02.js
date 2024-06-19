@@ -5,13 +5,13 @@ Após solicitar essas informações, o algoritmo deve apresentar o valor do sal�
 
 import leia from "readline-sync"
 
-var horas_trabalhadas = leia.questionFloat("Informe a quantidade de horas trabalhadas: ");
-var valor_hora = leia.questionFloat("Informe o valor da hora trabalhada: ");
-var percentual_desconto = leia.questionFloat("Informe o percentual de desconto: ");
+var HT = leia.questionFloat("INFORME A QUANTIDADE DE HORAS TRABALHADAS(HT): \n ");
+var VH = leia.questionFloat("INFORME O VALOR DE HORAS TRABALHADAS: \n ");
+var PD = leia.questionFloat("INFORME O PERCENTUAL DE DESCONTO: \n ");
 
-var bruto = horas_trabalhadas * valor_hora;
-var desconto = bruto / 100 * percentual_desconto;
+var bruto = HT * VH;
+var desconto = bruto / 100 * PD;
 var liquido = bruto - desconto;
-console.log("Salario bruto: R$" + bruto);
-console.log("Total descontado: R$" + desconto);
-console.log("Salario liquido: R$" + liquido);
+console.log("Salario bruto: \n R$" + bruto);
+console.log("Total descontado: \n R$" + desconto);
+console.log("Salario liquido: \n R$" + liquido);

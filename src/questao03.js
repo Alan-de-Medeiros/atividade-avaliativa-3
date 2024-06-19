@@ -5,12 +5,12 @@ O algoritmo deve calcular e exibir a média ponderada das notas.
 
 import leia from "readline-sync"
 
-var nota1 = leia.questionFloat("Informe a nota 1: ");
-var peso_nota1 = leia.questionFloat("Informe o peso da nota 1: ");
-var nota2 = leia.questionFloat("Informe a nota 2: ");
-var peso_nota2 = leia.questionFloat("Informe o peso da nota 2: ");
-var nota3 = leia.questionFloat("Informe a nota 3: ");
-var peso_nota3 = leia.questionFloat("Informe o peso da nota 3: ");
+var N1 = leia.questionFloat("INFORME A NOTA 1: \n");
+var PN1 = leia.questionFloat("INFORME PESO DA NOTA 1: \n");
+var N2 = leia.questionFloat("INFORME NOTA 2: \n");
+var PN2 = leia.questionFloat("INFORME PESO DA NOTA 2: \n");
+var N3 = leia.questionFloat("INFORME NOTA 3: \n");
+var PN3 = leia.questionFloat("INFORME PESO DA NOTA 3: \n");
 
-var media_ponderada = ((nota1 * peso_nota1) + (nota2 * peso_nota2) + (nota3 * peso_nota3)) / (peso_nota1 + peso_nota2 + peso_nota3);
-console.log("A média ponderada das notas é: " + media_ponderada);
+var mediaPonderada = ((N1 * PN1) + (N2 * PN2) + (N3 * PN3)) / (PN1 + PN2 + PN3);
+console.log("A média ponderada das notas é: " + mediaPonderada);

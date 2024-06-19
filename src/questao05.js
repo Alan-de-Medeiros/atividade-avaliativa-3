@@ -11,23 +11,23 @@ você ainda deve classificar qual é o tipo de triângulo, se é: Equilátero, I
 import leia from "readline-sync"
 
 console.log("VERIFICACAO TRIANGULO");
-var lado1 = leia.questionFloat("Informe o tamanho do lado 1: ");
-var lado2 = leia.questionFloat("Informe o tamanho do lado 2: ");
-var lado3 = leia.questionFloat("Informe o tamanho do lado 3: ");
+var LADO1 = leia.questionFloat("INFORME O TAMANHO DO LADO 1: \n");
+var LADO2 = leia.questionFloat("INFORME O TAMANHO DO LADO 2: \n");
+var LADO3 = leia.questionFloat("IINFORME O TAMANHO DO LADO 3: \n");
 
-var ver_lado1 = lado2 + lado3;
-var ver_lado2 = lado1 + lado3;
-var ver_lado3 = lado1 + lado2;
+var VerLado1 = LADO2 + LADO3;
+var VerLado2 = LADO1 + LADO3;
+var VerLado3 = LADO1 + LADO2;
 
-if (ver_lado1 > lado1 && ver_lado2 > lado2 && ver_lado3 > lado3){
-    console.log("Este e um triangulo valido.");
-    if (lado1 == lado2 && lado2 == lado3 && lado1 == lado3) {
-        console.log("Equilatero.");
-    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
-        console.log("Isosceles.");
+if (VerLado1 > LADO1 && VerLado2 > LADO2 && VerLado3 > LADO3){
+    console.log("TRIANGULO  VALIDO.");
+    if (LADO1 == LADO2 && LADO2 == LADO3 && LADO1 == LADO3) {
+        console.log("EQUILATERO.");
+    } else if (LADO1 == LADO2 || LADO1 == LADO3 || LADO2 == LADO3){
+        console.log("ISOSCELES.");
     } else {
-        console.log("Escaleno.");
+        console.log("ESCALENO.");
     }
 } else {
-    console.log("Este e um triangulo invalido.");
+    console.log("TRIANGULO INVALIDO.");
 }

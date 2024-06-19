@@ -5,11 +5,11 @@ Faça um algoritmo que receba o valor de compra do produto e ele retorne o valor
 
 import leia from "readline-sync"
 
-var valor_compra = leia.questionFloat("Informe o valor do produto: ");
+var compra = leia.questionFloat("INFORME O VALOR DO PRODUTO: \n");
 
-if (valor_compra < 20){
-console.log("O valor de venda do produto será: R$"+ (valor_compra * 1.45));
+if (compra < 20){
+console.log("VALOR DE VENDA: \n R$"+ (compra * 1.45));
 
 }else{
-    console.log("O valor de venda do produto será: R$"+ (valor_compra * 1.30));
+    console.log("VALOR DE VENDA: \n R$"+ (compra * 1.30));
 }
